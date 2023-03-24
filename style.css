@@ -1,0 +1,87 @@
+:root {
+    --dark: rgb(26, 22, 23);
+    --light: #fff;
+    --button: hsl(268, 79%, 43%);
+    --inputText: #D61C4E;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    width: 80vw;
+    height: 80vh;
+}
+.task ,.taskIn {
+    margin:2vh 2vw;
+    height: 2rem;
+    border-radius: 50px;
+    border: 2px solid blueviolet;
+    padding: 0 2rem;
+    font-family: cursive;
+    font-weight: 700;
+    color: black;
+    min-width: 20vw;
+
+}
+
+.btn {
+    background: none;
+    outline: none;
+    border: none;
+    color: var(--button);
+    font-weight: 700;
+    margin: 0 1vw;
+}
+
+.btnDelete {
+    background: none;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    color: red;
+}
+
+.btn:active,
+.btnDelete:active {
+    color: #b92d2d;
+}
+
+.btn:hover,
+.btnDelete:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.completedTag{
+    color: green; font-weight: bold; margin: 0 1vw;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+header h1{
+    font-family: cursive;
+}
+.box{
+    height: 40vh;
+    overflow-y: auto;
+}
